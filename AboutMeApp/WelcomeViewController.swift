@@ -21,7 +21,7 @@ final class WelcomeViewController: UIViewController {
     }
     
     private func addBackgroundWithGradient() {
-        // Идею честно взял здесь: https://www.youtube.com/watch?v=Qk_H0mlSIQc
+        
         let gradientBackground = CAGradientLayer()
         gradientBackground.colors = [UIColor.systemPink.cgColor, UIColor.systemBlue.cgColor]
         gradientBackground.frame = view.bounds
