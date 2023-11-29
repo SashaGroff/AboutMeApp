@@ -9,11 +9,12 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    private let userName = "Student"
-    private let userPassword = "pass1234"
     
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var userPasswordTF: UITextField!
+    
+    private let userName = "Student"
+    private let userPassword = "pass1234"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -41,6 +42,7 @@ final class LoginViewController: UIViewController {
     }
    
 //MARK: IBActions
+    
     @IBAction func remaindUserNameAction() {
         showAlert(withTitle: "Oops!", andMessage: "Your name is \(userName) 😉")
     }
@@ -58,7 +60,9 @@ final class LoginViewController: UIViewController {
 
 
 // MARK: UIAlertController
+
 extension LoginViewController{
+    
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(
             title: title,
