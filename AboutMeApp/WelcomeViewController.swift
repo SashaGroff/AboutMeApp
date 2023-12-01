@@ -8,27 +8,20 @@
 import UIKit
 
 final class WelcomeViewController: UIViewController {
-
+    
+     // MARK: - IB Actions
     @IBOutlet var greetingLabel: UILabel!
+    @IBOutlet var presentLabel: UILabel!
     
-    var greetingName: String!
+     // MARK: - Public methods
+    var user: User!
     
+     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addBackgroundWithGradient()
-        greetingLabel.text = "Welcome, \(greetingName ?? "")"
-    }
-    
-    private func addBackgroundWithGradient() {
         
-        let gradientBackground = CAGradientLayer()
-        gradientBackground.colors = [UIColor.systemPink.cgColor, UIColor.systemBlue.cgColor]
-        gradientBackground.frame = view.bounds
-        
-        gradientBackground.startPoint = CGPoint(x: 0, y: 0)
-        gradientBackground.endPoint = CGPoint(x: 0, y: 1)
-        
-        view.layer.insertSublayer(gradientBackground, at: 0)
+        greetingLabel.text = "Добро пожаловать, \(user.login)"
+        presentLabel.text = "Меня зовут \(user.person.fullname)"
     }
 }

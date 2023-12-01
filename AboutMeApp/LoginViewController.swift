@@ -9,23 +9,31 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    
+     // MARK: - IB Outlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var userPasswordTF: UITextField!
     
-    private let userName = "Student"
-    private let userPassword = "pass1234"
+     // MARK: - Private Properties
+    private var user = User.getUser()
+    
+     // MARK: - View life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTF?.text = user.login
+        userPasswordTF?.text = user.password
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
+     // MARK: - Novigation
     override func shouldPerformSegue(
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        guard userNameTF.text == userName, userPasswordTF.text == userPassword else {
+        guard userNameTF.text == user.login, userPasswordTF.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
@@ -36,19 +44,28 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let greetingScreen = segue.destination as? WelcomeViewController
+        guard let tabBarController = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarController.viewControllers else {return}
         
-        greetingScreen?.greetingName = userName
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let aboutVC = navigationVC.topViewController as? ResumeViewController else {
+                    return
+                }
+                aboutVC.user = user
+            }
+        }
     }
-   
-//MARK: IBActions
     
+     // MARK: - IB Actions
     @IBAction func remaindUserNameAction() {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is \(userName) 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.login) 😉")
     }
     
     @IBAction func remaindPasswordAction() {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is \(userPassword) 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your password is \(user.password) 😉")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -59,7 +76,7 @@ final class LoginViewController: UIViewController {
 }
 
 
-// MARK: UIAlertController
+    // MARK: - UIAlertController
 
 extension LoginViewController{
     
