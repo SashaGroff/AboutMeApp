@@ -17,6 +17,7 @@
 		44F569782B1902C2009D63ED /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F569772B1902C2009D63ED /* AboutMeViewController.swift */; };
 		44F5697A2B1A3CCF009D63ED /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F569792B1A3CCF009D63ED /* Extension.swift */; };
 		44F5697D2B1A4312009D63ED /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5697C2B1A4311009D63ED /* WelcomeViewController.swift */; };
+		44F569CB2B1B04EB009D63ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F569CA2B1B04EA009D63ED /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		44F569772B1902C2009D63ED /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		44F569792B1A3CCF009D63ED /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		44F5697C2B1A4311009D63ED /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = AboutMeApp/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		44F569CA2B1B04EA009D63ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +104,12 @@
 		442F9C892B0FDA9D001E1AE6 /* AboutMeApp */ = {
 			isa = PBXGroup;
 			children = (
-				4426447B2B17CB0800C8AC49 /* App */,
 				442644792B17C7D400C8AC49 /* ViewControllers */,
 				4426447A2B17CA0F00C8AC49 /* Storyboards */,
 				442644802B17CCBB00C8AC49 /* Models */,
 				44F5697B2B1A3D27009D63ED /* Extensions */,
+				4426447B2B17CB0800C8AC49 /* App */,
+				44F569CA2B1B04EA009D63ED /* Assets.xcassets */,
 			);
 			path = AboutMeApp;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442F9C972B0FDA9F001E1AE6 /* LaunchScreen.storyboard in Resources */,
+				44F569CB2B1B04EB009D63ED /* Assets.xcassets in Resources */,
 				442F9C922B0FDA9D001E1AE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

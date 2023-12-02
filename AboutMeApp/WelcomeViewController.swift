@@ -16,7 +16,7 @@ final class WelcomeViewController: UIViewController {
      // MARK: - Public methods
     var user: User!
     
-     // MARK: - Life cycle
+     // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         addBackgroundWithGradient()

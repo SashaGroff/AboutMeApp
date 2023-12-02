@@ -150,13 +150,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="esx-91-aBU">
-                        <imageReference key="image" image="house.fill" catalog="system" renderingMode="hierarchical-single">
-                            <hierarchicalColors>
-                                <color red="0.093769344569999996" green="0.001509738395" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="greetingLabel" destination="NV2-3e-dzc" id="mfx-uC-7uU"/>
@@ -166,7 +160,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pc4-WF-61Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ASF-jb-SKX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-161" y="1468"/>
+            <point key="canvasLocation" x="-683" y="1469"/>
         </scene>
         <!--Александр Г.-->
         <scene sceneID="QmG-Wd-xLP">
@@ -176,37 +170,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vk2-vK-cBC">
-                                <rect key="frame" x="82.5" y="93.5" width="155" height="156"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18048FDC-D8E6-4F21-A1DA-F9D4D5DEA3EF_1_201_a" translatesAutoresizingMaskIntoConstraints="NO" id="Vk2-vK-cBC">
+                                <rect key="frame" x="82" y="93.5" width="156" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="gB5-Kn-cWW"/>
-                                    <constraint firstAttribute="width" secondItem="Vk2-vK-cBC" secondAttribute="height" multiplier="155:156" id="ub6-zD-dvA"/>
+                                    <constraint firstAttribute="width" secondItem="Vk2-vK-cBC" secondAttribute="height" multiplier="1:1" id="ub6-zD-dvA"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-wX-poD">
-                                <rect key="frame" x="16" y="265.5" width="288" height="93"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-wX-poD">
+                                <rect key="frame" x="16" y="265.5" width="288" height="131"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOo-YQ-N2x">
-                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gST-E1-xNW">
-                                        <rect key="frame" x="0.0" y="25" width="72" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="37.5" width="80.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doh-ig-bOx">
-                                        <rect key="frame" x="0.0" y="50" width="65" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="74" width="72" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Место жительства:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2f-zb-QVz">
-                                        <rect key="frame" x="0.0" y="75" width="140" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="156" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -224,16 +218,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Александр Г." id="5At-YS-BW7">
-                        <barButtonItem key="rightBarButtonItem" title="Bio" id="QIq-bf-OSm">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lYg-Jb-wT8" userLabel="Bio">
-                                <rect key="frame" x="229" y="7.5" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Bio"/>
-                            </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Bio" id="0FF-Od-YU0">
                             <connections>
-                                <segue destination="qZO-cf-NpD" kind="show" id="ped-Ze-REo"/>
+                                <segue destination="qZO-cf-NpD" kind="show" id="OPE-XD-TXQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -241,12 +228,13 @@
                         <outlet property="addressLabel" destination="I2f-zb-QVz" id="A6m-cb-ULl"/>
                         <outlet property="ageLabel" destination="doh-ig-bOx" id="awM-7h-N1h"/>
                         <outlet property="nameLabel" destination="YOo-YQ-N2x" id="1FQ-Kl-Jt1"/>
+                        <outlet property="photoImage" destination="Vk2-vK-cBC" id="uuv-JJ-aY1"/>
                         <outlet property="secondNameLabel" destination="gST-E1-xNW" id="QSL-jg-qcW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR4-wY-EXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1471.875" y="1466.1971830985915"/>
+            <point key="canvasLocation" x="1016" y="2116"/>
         </scene>
         <!--Александр Г.-->
         <scene sceneID="5Jg-PN-bYk">
@@ -256,8 +244,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJU-zV-JG2" customClass="AboutMe">
-                                <rect key="frame" x="16" y="112.5" width="288" height="386.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FS3-FD-uIt">
+                                <rect key="frame" x="32" y="112.5" width="256" height="386.5"/>
+                                <mutableString key="text">Меня зовут Александр, мне 25. Живу я в славном городе Нижний Новгород, хотя родом я из маленькой деревеньки в Курганской области.Я работаю в сфере "электроэнергетики" 6 лет и эта работа показала мне жизнь и людей в разных городах, я что-то, вроде, понимаю в электрике 😅, но на этом плюсы моей работы заканчиваются. Последние 4 года я шел к программированию, даже учился на вышке, но ковид и один из моих работодателей решили, что я не буду успевать и меня благополучно пнули с третьего курса университета. Сказать, что я лох в этой ситуации - ничего не сказать 😁. Продолжаю расти и стремиться с командой Swiftbook во главе с Алексеем Ефимовым, чему я несказанно рад! Больше интересного обо мне можно узнать только в моей книге, которую я напишу, когда Спанч Боб получит премию Оскар. Пожалуй, этого достаточно.
+ Если вы это прочитали до сих слов, то я вас хочу поздравить с потраченным временем напрасно 😹, но мне приятно думать, что вы прочли мой мемуар.
+ Хорошего вам настроения! С наилучшеми пожеланиями - Александр Гончаров!</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -266,20 +257,20 @@
                         <viewLayoutGuide key="safeArea" id="KeA-7b-kL6"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
-                            <constraint firstItem="KeA-7b-kL6" firstAttribute="trailing" secondItem="FJU-zV-JG2" secondAttribute="trailing" constant="16" id="gpE-ef-VJw"/>
-                            <constraint firstItem="FJU-zV-JG2" firstAttribute="top" secondItem="KeA-7b-kL6" secondAttribute="top" constant="20" id="hk7-gB-SXE"/>
-                            <constraint firstItem="FJU-zV-JG2" firstAttribute="leading" secondItem="KeA-7b-kL6" secondAttribute="leading" constant="16" id="ijn-Il-nJy"/>
-                            <constraint firstItem="KeA-7b-kL6" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="FJU-zV-JG2" secondAttribute="bottom" constant="20" id="mQC-GH-fG7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FS3-FD-uIt" secondAttribute="trailing" constant="16" id="9aU-du-9Ga"/>
+                            <constraint firstItem="KeA-7b-kL6" firstAttribute="bottom" secondItem="FS3-FD-uIt" secondAttribute="bottom" constant="20" id="D85-9t-WzB"/>
+                            <constraint firstItem="FS3-FD-uIt" firstAttribute="top" secondItem="KeA-7b-kL6" secondAttribute="top" constant="20" id="Uax-8p-aWP"/>
+                            <constraint firstItem="FS3-FD-uIt" firstAttribute="leading" secondItem="R5z-UD-6tk" secondAttribute="leadingMargin" constant="16" id="oTe-wi-p8i"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Александр Г." id="Fo9-XZ-O4G"/>
                     <connections>
-                        <outlet property="bioLabel" destination="FJU-zV-JG2" id="qme-Nz-Ka3"/>
+                        <outlet property="bioLabel" destination="FS3-FD-uIt" id="cY3-BP-Klb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Db3-zj-lUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2205" y="1467"/>
+            <point key="canvasLocation" x="1791" y="2116"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yOE-Wd-ySB">
@@ -287,8 +278,9 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qOz-WC-Fqd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yhk-up-c2c">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="qyJ-Ml-QBX" kind="relationship" relationship="viewControllers" id="EKT-6t-nut"/>
@@ -304,13 +296,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffu-Ac-MEz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="About Me" id="HPR-Yo-cx7">
-                        <imageReference key="image" image="person.fill" catalog="system" renderingMode="hierarchical-single">
-                            <hierarchicalColors>
-                                <color red="0.093769344569999996" green="0.001509738395" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mxr-6G-ghC">
@@ -327,29 +313,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkC-0m-2lE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1468"/>
+            <point key="canvasLocation" x="249" y="2116"/>
         </scene>
     </scenes>
     <resources>
+        <image name="18048FDC-D8E6-4F21-A1DA-F9D4D5DEA3EF_1_201_a" width="3024" height="3024"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

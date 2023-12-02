@@ -9,12 +9,17 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
     
+     // MARK: - IB Outlets
     @IBOutlet var bioLabel: UILabel!
     
+     // MARK: - Public Propeties
     var user: User!
-
+    
+     // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addBackgroundWithGradient()
         
         bioLabel.text = user.person.bio
     }

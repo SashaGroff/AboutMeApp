@@ -23,6 +23,7 @@ final class LoginViewController: UIViewController {
         userPasswordTF?.text = user.password
     }
     
+     // MARK: - Overrides Methods
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -51,10 +52,10 @@ final class LoginViewController: UIViewController {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
-                guard let aboutVC = navigationVC.topViewController as? ResumeViewController else {
+                guard let resumeVC = navigationVC.topViewController as? ResumeViewController else {
                     return
                 }
-                aboutVC.user = user
+                resumeVC.user = user
             }
         }
     }
@@ -75,21 +76,3 @@ final class LoginViewController: UIViewController {
     
 }
 
-
-    // MARK: - UIAlertController
-
-extension LoginViewController{
-    
-    private func showAlert(withTitle title: String, andMessage message: String) {
-        let alert = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: .alert
-        )
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.userPasswordTF?.text = ""
-        }
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
-}
