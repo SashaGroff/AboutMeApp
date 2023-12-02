@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AboutMeViewController: UIViewController {
+final class AboutMeViewController: UIViewController {
     
      // MARK: - IB Outlets
     @IBOutlet var bioLabel: UILabel!
